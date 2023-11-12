@@ -1,1 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+.root{
+   
+--font-family:"Press Start 2P", Arial; 
+--font-family-variable: "Inter-Variable"; 
+--font-weight-text:"wdth" 400;
+--font-weight-title: "wdth" 700;
+--themes-background: #FFF;
+--themes-main-color:#000;
+--background-image: linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+
+}

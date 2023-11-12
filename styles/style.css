@@ -15,6 +15,205 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
+  font-family: "Press Start 2P";
+  background-color: var(--themes-background);
+  color: var(--themes-main-color);
+  background-image: var(--background-image);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  max-width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+}
+
+.blok-header {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  background-color: var(--themes-background);
+  border: 2px solid var(--themes-main-color);
+  margin: 99px 0 102px 0;
+  text-transform: uppercase;
+  width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+}
+
+.blok-header-title {
+  font-size: clamp(3.0625rem, 2.7324rem + 1.4085vw, 4rem);
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+
+.blok-header-text {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-block-start: 5px;
+  margin-bottom: 23px;
+  margin-left: 4px;
+  align-items: center;
+}
+
+.theme-menu__button {
+  text-transform: uppercase;
+  background: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+}
+
+.main {
+  font-family: "Inter-Variable";
+  margin-top: 10px;
+  max-width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+}
+.section {
+  margin-top: 10px;
+  border: 2px solid var(--themes-main-color);
+}
+
+.section-title {
+  font-family: "Inter-Variable";
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 30px;
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  margin-left: 11px;
+}
+
+.picture {
+  width: clamp(23.1875rem, 16.1232rem + 30.1408vw, 43.25rem);
+  border-bottom: 1px solid var(--themes-main-color);
+  border-top: 1px solid var(--themes-main-color);
+}
+.position-decorated-zone-right-up {
+  position: relative;
+}
+
+.decorated-zone-right-up {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  color: var(--themes-main-color);
+  font-family: "Press Start 2P";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  text-shadow: 2px 0 white, 0 -2px white, -2px 0 white, 0 2px white;
+  z-index: 1;
+}
+
+.decorated-zone-right-up-registr {
+  text-transform: lowercase;
+}
+
+.section-text {
+  color: var(--themes-main-color);
+  font-family: "Inter-Variable";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 116.667%;
+  margin: 21px 25px 27px;
+}
+
+.card-bitton {
+  display: flex;
+  gap: 17px;
+  margin-right: 23px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 173px;
+  margin-bottom: 25px;
+}
+
+.card__icon-button {
+  width: 27px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.card__like-button {
+  width: 130px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid var(--themes-main-color);
+}
+
+.button__text {
+  color: var(--themes-main-color);
+  font-family: "Press Start 2P";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 90%;
+  padding: 9px 0;
+}
+
+.space {
+  margin-top: 50px;
+}
+
+.filter-grayscale {
+  filter: grayscale(70%);
+}
+
+.filter-saturate {
+  filter: saturate(400%);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(25deg);
+}
+
+.filter-invert {
+  filter: invert(100%) contrast(60%);
+}
+
+.filter-sepia {
+  filter: sepia(90%);
+}
+
+.filter-blur {
+  filter: blur(5px);
+}
+
+.filter-hue-rotate-end {
+  filter: hue-rotate(80deg) contrast(60%);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+}
+
+.floppy {
+  width: 28px;
+  height: 28px;
+}
+
+.card__save-button{
+  background-color: transparent;
+  border: 2px solid var(--themes-main-color);
+  width: 306px;
+  height: 80px;
+  margin: 51px 102px 102px 102px;
+  padding-top: 10px;
 }
