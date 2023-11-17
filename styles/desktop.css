@@ -1,0 +1,74 @@
+@media (width > 376px) {
+    .blok-header-title {
+    margin-top: 137px;
+ 
+    }
+    .section-title-heading {
+    margin-left: 8px;
+    }
+
+    .heading {
+       
+      display: flex;
+      flex-direction: row;
+      width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  
+    }
+
+    .section-text-heading {
+        min-height: 33px;
+        margin-left: 4px;
+        padding-block-start: 4px;
+    }
+    
+
+.decorated-zone-right-up {
+    top: 23px;
+    right: 23px;
+}
+
+.section-card-text {
+margin-block-start: 33px;
+margin-inline-start: 23px;
+margin-inline-end: 23px;
+}
+
+.section-text-button {
+    margin-block-start: 28px;
+    
+}
+
+.card-button {
+    margin-right: 23px;
+    margin-bottom: 24.5px;
+}
+
+.section-card-text-modern{
+    margin-block-start: 33px;
+}
+
+.section-card-text-modern-desktop{
+    margin-block-start: 32px;
+}
+
+.card__save-button {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 339px;
+    height: 54px ;  
+    gap: 8px;
+}
+
+.floppy { 
+width: 21px;
+height: 21px;
+margin-block-start: 4px;
+
+  
+}  
+
+
+
+}
+
+
