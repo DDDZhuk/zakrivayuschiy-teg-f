@@ -19,11 +19,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
-.header {
-  max-width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
-}
 
 .blok-header {
   display: flex;
@@ -34,7 +32,8 @@
   border: 2px solid var(--themes-main-color);
   margin: 99px 0 79px 0;
   text-transform: uppercase;
-  width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  width:clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+  height:clamp(20.1875rem, 19.2852rem + 3.8498vw, 22.75rem);
 }
 
 .blok-header-title {
@@ -69,15 +68,16 @@
   font-weight: 400;
   font-size: 14px;
   border: none;
+  cursor: pointer;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
+  pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
-  pointer-events: none;
   position: absolute;
   right: 100px;
   animation: sdvig 0.5s ease-in-out infinite;
@@ -153,6 +153,7 @@
 .picture {
   width: clamp(23.1875rem, 16.1232rem + 30.1408vw, 43.25rem);
   height: clamp(23.1875rem, 16.0572rem + 30.4225vw, 43.4375rem);
+ 
 }
 
 .position-decorated-zone-right-up {
@@ -160,6 +161,7 @@
   height: clamp(23.1875rem, 16.1232rem + 30.1408vw, 43.25rem);
   border-bottom: 2px solid var(--themes-main-color);
   border-top: 2px solid var(--themes-main-color);
+  box-sizing: content-box;
 }
 
 .decorated-zone-right-up {
@@ -185,7 +187,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 30px 26px 0px 25px;
+  margin: 28px 26px 0px 25px;
 }
 
 .section-card-text-modern {
@@ -218,6 +220,7 @@
   justify-content: flex-end;
   margin-left: 171px;
   margin-bottom: 24px;
+
 }
 
 .card__icon-button {
@@ -229,7 +232,8 @@
   background-color: transparent;
   border: none;
   width: 40px;
-  height: 40px;
+  height: 34px;
+  cursor: pointer;
 }
 
 .card__icon-button:focus {
@@ -240,27 +244,35 @@
   outline: 2px solid var(--themes-main-color);
 }
 
-.card__like-button {
+
+
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--themes-main-color);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
   position: relative;
   overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  border: 2px solid var(--themes-main-color);
-  z-index: 1;
-  background-color: transparent;
-  width: 130px;
-  height: 38px;
 }
-
-.card__like-button:focus {
+.button:focus {
   outline: none;
-}
 
-.card__like-button:focus-visible {
+}
+.button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--themes-main-color);
 }
 
-.card__like-button:hover .button__text {
-  color: var(--text-button-color);
+
+
+.card__like-button {
+  width: 130px;
+  height: 38px;
+
 }
 
 .card__background:before {
@@ -288,6 +300,15 @@
   line-height: 90%;
   padding: 9px 0;
   transition: color 0.5s ease-in-out;
+}
+
+.button:hover .button__text {
+  color: var(--text-button-color);
+}
+
+
+.card__save-button:hover .button__text {
+  color: var(--text-button-color);
 }
 
 .core {
@@ -410,19 +431,15 @@
 .floppy {
   width: 28px;
   height: 28px;
+  transition: stroke 0.5s ease-in-out;
 }
 
 .card__save-button:hover .floppy {
   stroke: var(--text-button-color);
+
 }
 
 .card__save-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: 2px solid var(--themes-main-color);
   width: 306px;
   height: 80px;
   margin: 51px 102px 102px 102px;
@@ -430,16 +447,15 @@
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
   z-index: 1;
 }
 
-.card__save-button:hover .button__text {
-  color: var(--text-button-color);
-}
 
 .popap {
   border: none;
   background: none;
+  margin-left: initial;
 }
 
 .popap-card {
@@ -450,7 +466,7 @@
   justify-content: center;
   align-content: center;
   gap: 10px;
-  width: 357px;
+  width: 341px;
   height: 193px;
   border: 2px solid var(--themes-main-color);
   background-color: var(--themes-background);
@@ -462,32 +478,13 @@ dialog::backdrop {
 }
 
 .button-close {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  border: 2px solid var(--themes-main-color);
-  z-index: 1;
-  background-color: transparent;
-  width: 293px;
+  width: 257px;
   height: 38px;
-  padding: 9px 17px;
-  justify-content: center;
-  align-items: center;
   margin-block-start: 20px;
 }
 
-.button-close:focus {
-  outline: none;
-}
 
-.button-close:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--themes-main-color);
-}
 
-.button-close:hover .button__text {
-  color: var(--text-button-color);
-}
 
 .content-popap {
   display: flex;
@@ -506,10 +503,96 @@ dialog::backdrop {
   font-size: 14px;
   width: 234px;
   height: 63px;
-  margin-inline-end: 15px;
+
 }
 
 .floppy-big {
   width: 65px;
   height: 39px;
+  margin-inline-start: 20px;
+  
+}
+
+
+@media (width > 376px) {
+
+
+  .blok-header-title {
+    margin-top: 137px;
+  }
+
+  .section-title-heading {
+    margin-left: 8px;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  }
+
+  .section-text-heading {
+    min-height: 33px;
+    margin-left: 4px;
+    padding-block-start: 4px;
+  }
+
+  .decorated-zone-right-up {
+    top: 23px;
+    right: 23px;
+  }
+
+  .section-card-text {
+    margin-block-start: 31px;
+    margin-inline-start: 23px;
+    margin-inline-end: 23px;
+  }
+
+  .section-text-button {
+    margin-block-start: 28px;
+  }
+
+  .card-button {
+    margin-right: 23px;
+    margin-bottom: 24.5px;
+  }
+
+  .section-card-text-modern {
+    margin-block-start: 33px;
+  }
+
+  .section-card-text-modern-desktop {
+    margin-block-start: 32px;
+  }
+
+  .card__save-button {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 339px;
+    height: 54px;
+    gap: 8px;
+  }
+
+  .popap {
+    margin-left: auto;
+    }
+  .popap-card {
+    width: 357px;
+  }
+
+  
+.floppy-big {
+  margin-inline-start: 0;
+}
+
+  .floppy {
+    width: 21px;
+    height: 21px;
+    margin-block-start: 4px;
+  }
+
+  .button-close {
+    width: 293px;
+   
+  }
 }

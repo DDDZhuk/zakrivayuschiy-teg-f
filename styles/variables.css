@@ -1,5 +1,5 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-.root {
+:root {
   --font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
   --font-family-variable: "Inter-Variable", Arial, Helvetica, sans-serif;
   --font-weight-text: "wdth" 400;
