@@ -12,3 +12,63 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes heart {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+
+  @keyframes sparks {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes sdvig {
+    0% {
+      translate: 4px;
+    }
+    100% {
+      translate: 0;
+    }
+  }
+  
+
+/*
+  .fill_background_button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--themes-main-color);
+    translate: 100% ;
+    transition: translate 0.5s ease-in-out;
+    transform-origin: left;
+}
+  
+  .fill_background_button:hover::before {
+    animation: move 0.5s ease-in-out forwards ;
+    transition: translate 0.5s ease-in-out;
+     
+  }
+  
+  @keyframes move {
+    0%{
+      translate:-100% ;
+     
+  
+    }
+  
+    100%{
+      translate:0 ;
+    
+     
+    }
+  }
+  
