@@ -2,8 +2,9 @@
 :root {
   --font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
   --font-family-variable: "Inter-Variable", Arial, Helvetica, sans-serif;
-  --font-weight-text: "wdth" 400;
-  --font-weight-title: "wdth" 700;
+  --font-weight-text: "wght" 400;
+  --font-weight-title: "wght" 700;
+  --font-wght-range:"wght" 400 785;
   --themes-background: #fff;
   --themes-main-color: #000;
   --heart-color-red: #ff0000;
@@ -11,11 +12,7 @@
   --button-color:#fff;
   --button-bg:#000;
   --main-button-color:#fff;
-  --background-image: repeating-linear-gradient(
-      90deg,
-      #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
-    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+  --background-image:repeating-linear-gradient(90deg, #d3d3d3 0 2px,transparent 2px 4px),
+  repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
+  linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
 }
